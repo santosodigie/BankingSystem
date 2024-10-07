@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "+WRQYiVACFyPiz+emDEMVnw96L0YqbpOz5x4Vsm2b6QaV8XA7CXm9FYkIg9dbWWoSzIZUamj7vfy47ic1stXQQ==",
+  "success": true,
+  "projectFilePath": "/Users/santosodigie/CSharpProjects/BankingSystem/BankingSystem.csproj",
+  "expectedPackageFiles": [
+    "/Users/santosodigie/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/santosodigie/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/Users/santosodigie/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
+    "/Users/santosodigie/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
