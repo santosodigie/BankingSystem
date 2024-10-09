@@ -17,6 +17,11 @@ while (!exit)
     switch (Console.ReadLine())
     {
         case "1":
+            Console.Write("Enter account holder name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter initial deposit: ");
+            double initialDeposit = double.Parse(Console.ReadLine());
+            bank.CreateAccount(name, initialDeposit);
             break;
         case "2":
             break;
