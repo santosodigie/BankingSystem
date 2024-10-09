@@ -8,7 +8,7 @@ public class Bank
 
     public void CreateAccount(string accountHolderName, double initialBDeposit)
     {
-        Account newAccount = new accountHolderName(nextAccountNumber++, accountHolderName, initialBDeposit);
+        Account newAccount = new Account(nextAccountNumber++, accountHolderName, initialBDeposit);
         accounts.Add(newAccount);
         Console.WriteLine("Account created successfully.");
         newAccount.DisplayAccountDetails();

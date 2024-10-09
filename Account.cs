@@ -3,23 +3,11 @@ using System;
 public class Account
 {
     //properties
-    public int AccountNumber
-    {
-        get;
-        private set;
-    }
-    public string AccountHolderName
-    {
-        get;
-        private set;
-    }
-    public double Balance
-    {
-        get;
-        private set;
-    }
+    public int AccountNumber { get; private set; }
+    public string AccountHolderName { get; private set; }
+    public double Balance { get; private set; }
     //constructor
-    public class Account(int accountNumber, string accountHolderName, double initialBalance)
+    public Account(int accountNumber, string accountHolderName, double initialBalance)
     {
         AccountNumber = accountNumber;
         AccountHolderName = accountHolderName;
@@ -44,7 +32,7 @@ public class Account
         if (amount > 0 && amount <= Balance)
         {
             Balance -= amount;
-            Console.WriteLine($"You have withdrawn {amount}, your new Balance is {Balance}")
+            Console.WriteLine($"You have withdrawn {amount}, your new Balance is {Balance}");
         }
         else
         {
