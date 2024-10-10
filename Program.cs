@@ -24,6 +24,19 @@ while (!exit)
             bank.CreateAccount(name, initialDeposit);
             break;
         case "2":
+            Console.Write("Enter the amount you want to deposit");
+            int accountNumber = int.Parse(Console.ReadLine());
+            Console.Write("Enter amount to deposit: ");
+            double amount = double.Parse(Console.ReadLine());
+            accountNumber account = bank.FindAccount(accountNumber);
+            if (account != null)
+            {
+                account.Deposit(amount);
+            }
+            else
+            {
+                Console.WriteLine("Account not found.");
+            }
             break;
         case "3":
             break;
