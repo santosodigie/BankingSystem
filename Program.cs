@@ -53,7 +53,15 @@ while (!exit)
                 Console.WriteLine("Account not found.");
             }
             break;
+
         case "4":
+            Console.Write("Enter the source account number: ");
+            int fromAccountNumber = int.Parse(Console.ReadLine());
+            Console.Write("Enter the destination account number: ");
+            int toAccountNumber = int.Parse(Console.ReadLine());
+            Console.Write("Enter amount to transfer: ");
+            double amount = double.Parse(Console.ReadLine());
+            bank.TransferMoney(fromAccountNumber, toAccountNumber, amount);
             break;
         case "5":
             break;
