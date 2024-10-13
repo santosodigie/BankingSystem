@@ -64,6 +64,17 @@ while (!exit)
             bank.TransferMoney(fromAccountNumber, toAccountNumber, amount);
             break;
         case "5":
+            Console.Write("Enter account number: ");
+            int accountNumber = int.Parse(Console.ReadLine());
+            Account account = bank.FindAccount(accountNumber);
+            if (account != null)
+            {
+                account.DisplayAccountDetails();
+            }
+            else
+            {
+                Console.WriteLine("Account not found.");
+            }
             break;
         case "6":
             exit = true;
